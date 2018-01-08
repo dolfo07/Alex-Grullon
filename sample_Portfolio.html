@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Example</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-color: #eaeded;
+        }
+
+        nav {
+            height: 20px;
+        }
+
+        .navbar {
+            margin-top: 0;
+        }
+
+        .navbar,
+        .navbar-inverse {
+            background: #eaeded !important;
+            border-color: #eaeded !important;
+        }
+
+        .navbar-brand {
+            height: 40px;
+            width: 100px;
+            padding: 0;
+        }
+
+        /*The below will not allow the navbar to cut part of the section when scroll jumping*/
+
+        #about:before {
+            display: block;
+            content: " ";
+            margin-top: -75px;
+            height: 75px;
+            visibility: hidden;
+        }
+
+        #portfolio:before {
+            display: block;
+            content: " ";
+            margin-top: -75px;
+            height: 75px;
+            visibility: hidden;
+        }
+
+        #contact:before {
+            display: block;
+            content: " ";
+            margin-top: -75px;
+            height: 75px;
+            visibility: hidden;
+        }
+
+        #about {
+            background: url("http://pittsburghcreative.com/wp-content/uploads/2017/07/design-of-the-free-slot-website.jpg")repeat;
+        }
+
+        .carousel {
+            margin-top: 5em;
+            height: 350px;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .item {
+            text-align: center;
+            height: 350px !important;
+        }
+
+        .carousel-caption h3 {
+            color: #00ced1;
+        }
+
+        .carousel-caption p {
+            color: #ccffff;
+        }
+
+        .img-fluid {
+            width: 800px;
+            height: 250px;
+        }
+
+        .card-deck {
+            padding: 10px;
+        }
+
+        h1.h1 {
+            color: #ff6666;
+        }
+
+        /* footer social icons code inspiration by Sam1225 https://bootsnipp.com/snippets/K5MjQ*/
+
+        ul.social-network {
+            list-style: none;
+            display: inline;
+            margin-left: 0 !important;
+            padding: 0;
+        }
+
+        ul.social-network li {
+            display: inline;
+            margin: 0 5px;
+        }
+
+        ul.social-network li a {
+            background-color: #d3d3d3;
+        }
+
+        /* footer social icons */
+
+        .social-network a.icoGitHub:hover {
+            background-color: #333;
+        }
+
+        /*
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+  background-color: #bd3518;
+}*/
+
+        .social-network a.icoLinkedin:hover {
+            background-color: #007bb7;
+        }
+
+        .social-network a.icoGitHub:hover i,
+        .social-network a.icoLinkedin:hover i,
+        /*.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,*/
+
+            {
+            color: #fff;
+        }
+
+        a.socialIcon:hover,
+        .socialHoverClass {
+            color: #44bcdd;
+        }
+
+        .social-circle li a {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto 0 auto;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .social-circle li i {
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .social-circle li a:hover i,
+        .triggeredHover {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms--transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        .social-circle i {
+            color: #fff;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            -ms-transition: all 0.8s;
+            transition: all 0.8s;
+        }
+
+        footer {
+            margin-bottom: 3em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-nav navbar-inverse navbar-fixed-top">
+            <div class="navbar-fluid container-fluid justify-content-between nav-responsive">
+                <a href="#">
+			<img class="navbar-brand navbar-left" src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/022013/ag_0.png?itok=E28f_5sa" alt="logo">
+		</a>
+                <a class="nav-item nav-link display-5" href="#about">About Me</a>
+                <a class="nav-item nav-link display-5" href="#portfolio">Portfolio</a>
+                <a class="nav-item nav-link display-5" href="#contact">Contact Me</a>
+            </div>
+        </nav>
+        <!--Nav Section-->
+
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div id="about" class="row">
+                    <div class="col-xs-12">
+                        <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="active item carousel-fade">
+                                    <div class="carousel-caption">
+                                        <h3 class="display-3">Alex Grullon</h3>
+                                        <img class="img-fluid" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/005/054/229/23cff2f.jpg">
+                                    </div>
+                                </div>
+                                <div class="item carousel-fade">
+                                    <div class="carousel-caption">
+                                        <h3 class="display-3">About me</h3>
+                                        <p class="lead"><strong>I am originally from Dominican Rep but reside in NYC for the past 10 years. I have a passion for technology and try to keep myself up with the new trends in web and software development.</strong></p>
+                                    </div>
+                                </div>
+                                <div class="item carousel-fade">
+                                    <div class="carousel-caption">
+                                        <h3 class="display-3">Mission</h3>
+                                        <p class="lead"><strong>My Mission is to expand my experience as a Full-Stack Developer and UX/UI designer and create responsive Websites and Web mobile apps. 
+              I aim to have the user experience, design responsiveness and accesibility in mind.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel nav -->
+                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+                            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--about me section/container-fluid-->
+
+            <div class="card-deck">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 id="portfolio" class="h1 animated rollIn">Portfolio</h1>
+                    </div>
+                    <div class="card col-sm-4">
+                        <img class="card-img-top" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/pinecone-minimal-portfolio-website-template.jpg" alt="Card image cap">
+                        <div class="card-footer">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipiscing elit sed dictumst.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-4">
+                        <img class="card-img-top" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/pinecone-minimal-portfolio-website-template.jpg" alt="Card image cap">
+                        <div class="card-footer">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipiscing elit sed dictumst.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-4">
+                        <img class="card-img-top" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/pinecone-minimal-portfolio-website-template.jpg" alt="Card image cap">
+                        <div class="card-footer">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipiscing elit sed dictumst.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--1st row/card-deck-->
+                <div class="row">
+                    <div class="col-sm-12">
+                    </div>
+                    <div class="card col-sm-4">
+                        <img class="card-img-top" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/pinecone-minimal-portfolio-website-template.jpg" alt="Card image cap">
+                        <div class="card-footer">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipiscing elit sed dictumst.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-4">
+                        <img class="card-img-top" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/pinecone-minimal-portfolio-website-template.jpg" alt="Card image cap">
+                        <div class="card-footer">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipiscing elit sed dictumst.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-4">
+                        <img class="card-img-top" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/pinecone-minimal-portfolio-website-template.jpg" alt="Card image cap">
+                        <div class="card-footer">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipiscing elit sed dictumst.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--2nd row/card-deck-->
+            </div>
+            <!--Portfolio section/card-deck-->
+
+            <div class="jumbotron">
+                <h2 id="contact">Request Info/Services</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- We're going to place the form here in the next step -->
+                            <form id="contact-form" method="post" role="form">
+                                <div class="messages"></div>
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Name</label>
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Name*" required="required" data-error="Name is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Last Name</label>
+                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Last Name*" required="required" data-error="Lastname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Email</label>
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email*" required="required" data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="form_phone">Phone</label>
+                                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="form_message">Message</label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me*" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Contact me Section-->
+                </div>
+                <!--contact me form-->
+            </div>
+            <!--contact me section/jumbotron-->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="social-network social-circle">
+                                <li><a target="_blank" href="https://gist.github.com/dolfo07" class="icoGitHub" title="GitHub"><i class="fa fa-github" ></i></a></li>
+                                <!--<li><a target='_blank' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+                                <!--<li><a target='_blank' href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>-->
+                                <li><a target="_blank" href="https://www.linkedin.com/in/alexaybar/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <!--social media icons-->
+                        <div class="col-sm-6">
+                            <span class="text-muted">This site was made with HTML/CSS/JavaScript and Bootstrap</span>
+                        </div>
+                        <!--footer notes-->
+                    </div>
+                    <!--footer row-->
+                </div>
+                <!--main footer container-->
+            </footer>
+            <!--footer section-->
+
+        </div>
+        <!-- secondary container fluid-->
+    </div>
+    <!--main container fluid>
+  
+  
+</body>
+</html>

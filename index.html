@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Alex Grullon</title>
     <!--External Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <!-- Internal Styles -->
     <link rel="stylesheet" href="style.css">
-    <!-- External Scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <title>Alex Grullon</title>
-</head>
+    </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light navbar-fixed-top navHeader" id="nav">
-            <div>
+    <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light navbar-fixed-top navHeader" id="nav">
                 <div class="navbar-header">
                     <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
                         <span class="sr-only">Toggle navigation</span>
@@ -30,129 +26,67 @@
                 </div>
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="active"><a data-toggle="collapse" data-target=".navbar-collapse" href="#home" title="Home">Home</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#about" title="About">About</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#resume" title="Resume">Resume</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#portfolio" title="Portfolio">Portfolio</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact" title="Contact">Contact</a></li>
                     </ul>
                 </div>
-            </div>
         </nav>
+    <!-- Start Header -->
+    <header class="header">
+        <div id="home" class="slider">
+            <div class="container">
+                <div class="intro">
+                    <h2>Jr. Front End Web Developer</h2>
+                </div>
+            </div>
+        </div>
     </header>
+    <!-- End Header -->
+
     <main>
-        <section id="home" class="heading">
-            <div class="row">
-                <div id="heading1" class="col-sm-12">
-                    <h1 class="animation font display-1">ALEX GRULLON</h1>
-                </div>
-            </div>
-            <br>
-            <nav id="navigation" class="container-fluid">
-                <ul class="row nav font">
-                    <li class="nav-item col-sm-3 col-md-3 well up-hover">
-                        <a href="#about" class="nav-link">
-                            <span class="text-center"><i class="fa fa-id-card-o"></i></span>
-                            <h2 class="text-center">About</h2>
-                        </a>
-                    </li>
-                    <li class="nav-item col-sm-3 col-md-3 well up-hover">
-                        <a href="#portfolio" class="nav-link">
-                            <span class="text-center"><i class="fa fa-pencil-square-o"></i></span>
-                            <h2 class="text-center">Portfolio</h2>
-                        </a>
-                    </li>
-                    <li class="nav-item col-sm-3 col-md-3 well up-hover">
-                        <a href="#skills" class="nav-link">
-                            <span class="text-center"><i class="fa fa-file-code-o"></i></span>
-                            <h2 class="text-center">Skills</h2>
-                        </a>
-                    </li>
-                    <li class="nav-item col-sm-3 col-md-3 well up-hover">
-                        <a href="#contact" class="nav-link">
-                            <span class="text-center"><i class="fa fa-pencil-square-o"></i></span>
-                            <h2 class="text-center">Contact</h2>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <section id="about" class="container-fluid about">
-            <h1 class="font text-center display-1">About me</h1>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <article class="jumbotron jumbotron-fluid row">
-                        <h2 class="text-left">Entry Level/Jr. Front End Web Developer</h2>
-                        <aside class="col-md-4">
-                            <img class="img-fluid profile-img" src="image/profileImg.jpg" alt="ProfileImage"></aside>
-                        <aside class="col-md-8 text-left">
-                            <p>I'm a Junior Front End Web Developer from New York, NY. I have graduated with a Bacherlor in Information technology. I'm currently learning Angular JS, MySQL, Angular JS, PHP and PWA development with LinkedIn Learning and FreeCodeCamp as well as further my knowledge on JavaScript.</p>
-                            <hr>
-                            <p> I look forward to begin working alongside other web developer and learning more about this field I have found myself becoming very passionate about.</p>
-                        </aside>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio" class="container-fluid text-center portfolio">
-            <h1 class="text-center font display-1">Portfolio</h1>
-            <h2 class="text-left">Websites and Webpages</h2><br>
-            <!-- Portfolio img1 -->
-            <div class="row">
-                <figure class="col-md-4 col-sm-6 portfolio-item img-thumbnail">
-                    <a href="https://codepen.io/Arquimedes/full/veddmO/" target="_blank" class="portfolio-link"><img src="image/tribute.png" class="img-responsive" alt="tribute Page"/></a>
-                    <figcaption class="portfolio-caption">
-                        <h4>Tribute Page</h4>
-                    </figcaption>
-                </figure>
-                <!-- End of Portfolio img1 -->
-                <!-- Portfolio img2 -->
-                <figure class="col-md-4 col-sm-6 portfolio-item img-thumbnail">
-                    <a href="https://codepen.io/Arquimedes/full/KXoKJO/" target="_blank" class="portfolio-link"><img src="image/portfolio.png" class="img-responsive" alt="Portfolio Website.v1"/></a>
-                    <figcaption class="portfolio-caption">
-                        <h4>1-Page Website</h4>
-                    </figcaption>
-                </figure>
-                <!-- End of Portfolio img2 -->
-                <!-- Portfolio img3 -->
-                <figure class="col-md-4 col-sm-6 portfolio-item img-thumbnail">
-                    <a href="#" target="_blank" class="portfolio-link"><img src="image/more.png" class="img-responsive" alt="More Coming"/></a>
-                    <figcaption class="portfolio-caption">
-                        <h4>More Coming</h4>
-                    </figcaption>
-                </figure>
-                <!-- End of Portfolio img3 -->
-            </div>
-        </section>
-        <section id="skills" class="container-fluid text-center skills">
-            <h1 class="text-center font display-1">Skills</h1>
-            <div id="skillList" class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <figure class="img-fluid shine">
+        <!-- Start About Me -->
+        <section id="about" class="about-me">
+            <h2 class="text-center">Alex Grullon</h2>
+            <figure class="img-fluid image">
+                <img src="image/profileImg.jpg" alt="Profile Image">
+            </figure>
+            <section class="info">
+               <h2 class="text-center">About me</h2>
+                <p>I'm a Junior Front End Web Developer from New York, NY. I have graduated with a Bacherlor in Information technology. I'm currently learning Angular JS, MySQL, Angular JS, PHP and PWA development with LinkedIn Learning and FreeCodeCamp as well as sharpening my knowledge on JavaScript.</p>
+                <p>I look forward to begin working alongside other web developer and learning more about this field I have found myself becoming very passionate about.</p>
+            </section>
+            <section id="skills" class="container-fluid text-center skillList">
+            <h2 class="text-center">Skills</h2>
+            <div class="row justify-content-between">
+                <div class="col-xs-3 col-sm-2">
+                    <figure class="img-fluid shine" title="HTML5">
                         <img src="image/HTML5-icon.png" alt="HTML logo" class="img-thumbnail">
                         <figcaption>
                             HTML5
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <figure class="img-fluid shine">
+                <div class="col-xs-3 col-sm-2">
+                    <figure class="img-fluid shine" title="CSS">
                         <img src="image/CSS-icon.png" alt="CSS logo" class="img-thumbnail">
                         <figcaption>
                             CSS
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <figure class="img-fluid shine">
+                <div class="col-xs-3 col-sm-2">
+                    <figure class="img-fluid shine" title="Bootstrap">
                         <img src="image/bootstrap-logo.jpg" alt="Bootstrap logo" class="img-thumbnail">
                         <figcaption>
                             Bootstrap3
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <figure class="img-fluid shine">
+                <div class="col-xs-3 col-sm-2">
+                    <figure class="img-fluid shine" title="JavaScript">
                         <img src="image/JS-logo.png" alt="Js logo" class="img-thumbnail">
                         <figcaption>
                             JavaScript
@@ -161,27 +95,105 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="container-fluid contact">
-            <h1 class="font text-center display-3">Lets Connect!</h1>
-            <div class="text-center">
-                <p>Get in Touch or Find me on:</p>
-            </div>
-            <div class="row">
-                <nav class="col-xs-12 col-sm-12 text-center">
-                    <ul class="list-inline links">
-                        <li class="list-inline-item"><a class="btn btn-default btn-md" href="mailto:a.grullon1@outlook.com" title="Email" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-default btn-md" href="https://codepen.io/Arquimedes" title="AG on Codepen" target="_blank"><i class="fa fa-codepen"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-default btn-md" href="https://www.freecodecamp.org/dolfo07" title="AG on FreeCodeCamp" target="_blank"><i class="fa fa-free-code-camp"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-default btn-md" href="https://github.com/dolfo07" title="AG on GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-default btn-md" href="https://www.linkedin.com/in/alexgrullon1/" title="AG on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <br>
         </section>
+        <!-- End About Me -->
+
+        <!-- Start Resume -->
+        <section id="resume" class="container resume">
+                <h2>Resume</h2>
+                <p>A detailed description of my background and experience </p>
+                <a href="A.Grullon%20Resume.pdf" download class="btn download">
+                    <button type="button" class="my-button" name="button">Download</button>
+                </a>
+        </section>
+        <!-- End of Resume -->
+
+        <!-- Start My Education -->
+        <section class="my-education">
+            <div class="container">
+                <div class="main">
+                    <h2>My Education</h2>
+                    <p>I took courses that prepared me with fundamental knowledge in core technologies, such as systems analysis and design, programming, database design, Web technologies and application development, implementation and maintenance</p>
+                    <p>The Bachelor of Science in Information Technology (BSIT) program is focused on the acquisition of theory and application of technical competencies associated with the information technology profession</p>
+                </div>
+                <div class="exp">
+                    <div class="certificate">
+                        <h3>Bachelors of Science in Information Technology w/ an Advance Software Certificate</h3>
+                        <span><strong>University of Phoenix</strong> / October 2015 / November 2017</span>
+                        <span>3.16 GPA</span>
+                        <hr>
+                        <h3>Associate of Arts w/ a Concentration in Information Technology</h3>
+                        <span><strong>University of Phoenix</strong> / July 2015 / September 2015</span>
+                        <span>3.28 GPA</span>
+                        <hr>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <!-- End My Education -->
+
+        <!-- Start Portfolio -->
+        <section id="portfolio" class="container-fluid text-center portfolio">
+            <h2 class="text-center font display-1">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <figure class="img-fluid">
+                       <a href="https://codepen.io/Arquimedes/full/veddmO/" target="_blank" class="shine"><img src="image/tribute.png" alt="Tribute Page" class="img-thumbnail"></a>
+                        <figcaption>
+                           <h4>Tribute Page</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="img-fluid">
+                       <a href="https://codepen.io/Arquimedes/full/KXoKJO/" target="_blank" class="shine"><img src="image/portfolio.png" alt="Portfolio Website" class="img-thumbnail"></a>
+                        <figcaption>
+                           <h4>1-Page Website</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="img-fluid">
+                       <a href="#" target="_blank" class="shine"><img src="image/Portfoliov.1.JPG" alt="1st Portfolio Template" class="img-thumbnail"></a>
+                        <figcaption>
+                           <h4>Portfolio Template v.1</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+
+        </div>
+        </section>
+        <!-- End Portfolio -->
     </main>
+
+    <!-- Start Contact Me -->
+    <footer id="contact" class="container-fluid contact">
+        <h1 class="font text-center display-3">Lets Connect!</h1>
+        <div class="text-center">
+            <p>Get in Touch or Find me on:</p>
+        </div>
+        <div class="row">
+            <nav class="col-xs-12 text-center">
+                <ul class="list-inline links">
+                    <li class="list-inline-item"><a class="btn btn-default btn-md" href="mailto:a.grullon1@outlook.com" title="Email" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-default btn-md" href="https://codepen.io/Arquimedes" title="AG on Codepen" target="_blank"><i class="fa fa-codepen"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-default btn-md" href="https://www.freecodecamp.org/dolfo07" title="AG on FreeCodeCamp" target="_blank"><i class="fa fa-free-code-camp"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-default btn-md" href="https://github.com/dolfo07" title="AG on GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-default btn-md" href="https://www.linkedin.com/in/alexgrullon1/" title="AG on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+    </footer>
+    <!-- End Contact Me -->
+    
+    <!-- External Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
     <!--Internal Script-->
-    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
